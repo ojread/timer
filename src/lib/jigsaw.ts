@@ -42,8 +42,8 @@ class JigsawPuzzle {
       cols: 8,
       totalDuration: 20000,
       maxRotation: 45,
-      maxWidth: window.innerWidth * 0.9,
-      maxHeight: window.innerHeight * 0.8,
+      maxWidth: window.innerWidth,
+      maxHeight: window.innerHeight,
       ...options
     };
 
