@@ -2,7 +2,7 @@
 	import { onMount } from 'svelte';
 	import Jigsaw from '$lib/jigsaw';
 
-	const imageModules = import.meta.glob('$lib/assets/**/*.{jpg,png,webp}', {
+	const imageModules = import.meta.glob('$lib/assets/**/*.{avif,jpg,png,webp}', {
 		import: 'default',
 		eager: true
 	});

@@ -1,5 +1,12 @@
 <script lang="ts">
-	const themes = ['Numberjacks', 'Star Wars'];
+	const themes = [
+		'Minecraft',
+		'My Singing Monsters',
+		'Numberjacks',
+		'Spider-Man',
+		'Spongebob',
+		'Star Wars'
+	];
 
 	function handleSubmit(event: SubmitEvent) {
 		const formData = new FormData(event.target as HTMLFormElement);
@@ -20,10 +27,10 @@
 				<input
 					type="radio"
 					name="theme"
-					value={theme.toLowerCase().replace(' ', '')}
-					id="theme-{theme}"
+					value={theme.toLowerCase().replaceAll(' ', '')}
+					id="theme-{theme.toLowerCase().replaceAll(' ', '')}"
 				/>
-				<label for="theme-{theme}">
+				<label for="theme-{theme.toLowerCase().replaceAll(' ', '')}">
 					{theme}
 				</label>
 			</li>
