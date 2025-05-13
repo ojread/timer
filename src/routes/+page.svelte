@@ -1,5 +1,6 @@
 <script lang="ts">
 	const themes = [
+		'Jobs',
 		'Mario',
 		'Minecraft',
 		'My Singing Monsters',
