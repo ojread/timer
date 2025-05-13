@@ -1,11 +1,14 @@
 <script lang="ts">
 	const themes = [
+		'Mario',
 		'Minecraft',
 		'My Singing Monsters',
+		'Numberblocks',
 		'Numberjacks',
 		'Spider-Man',
 		'Spongebob',
-		'Star Wars'
+		'Star Wars',
+		'Vania Mania'
 	];
 
 	function handleSubmit(event: SubmitEvent) {
