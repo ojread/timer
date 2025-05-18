@@ -6,6 +6,7 @@
 		'My Singing Monsters',
 		'Numberblocks',
 		'Numberjacks',
+		'Paw Patrol',
 		'Spider-Man',
 		'Spongebob',
 		'Star Wars',
