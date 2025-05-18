@@ -67,6 +67,6 @@
 			</fieldset>
 		</div>
 
-		<input class="btn btn-xl btn-primary" type="submit" value="Start timer" />
+		<input class="btn btn-xl btn-primary mb-4" type="submit" value="Start timer" />
 	</form>
 </article>
