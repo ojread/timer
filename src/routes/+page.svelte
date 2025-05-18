@@ -19,45 +19,54 @@
 	}
 </script>
 
-<h1>Welcome to SvelteKit</h1>
-<p>Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation</p>
+<article class="prose-xl">
+	<h1>Toothy Timer 🦷</h1>
 
-<h2>Choose a theme and time</h2>
+	<p>Choose a theme and time</p>
 
-<h3>Theme:</h3>
-<form action="/timer">
-	<ul>
-		{#each themes as theme}
-			<li>
-				<input
-					type="radio"
-					name="theme"
-					value={theme.toLowerCase().replaceAll(' ', '')}
-					id="theme-{theme.toLowerCase().replaceAll(' ', '')}"
-				/>
-				<label for="theme-{theme.toLowerCase().replaceAll(' ', '')}">
-					{theme}
-				</label>
-			</li>
-		{:else}
-			<li>Something went wrong!</li>
-		{/each}
-	</ul>
+	<form action="/timer">
+		<div class="mb-4 grid-cols-2 gap-4 lg:grid">
+			<fieldset class="fieldset text-lg">
+				<legend class="fieldset-legend">Theme</legend>
+				{#each themes as theme}
+					<label
+						class="label text-base-content text-lg"
+						for="theme-{theme.toLowerCase().replaceAll(' ', '')}"
+					>
+						<input
+							type="radio"
+							class="radio radio-primary"
+							name="theme"
+							value={theme.toLowerCase().replaceAll(' ', '')}
+							id="theme-{theme.toLowerCase().replaceAll(' ', '')}"
+						/>
+						{theme}
+					</label>
+				{:else}
+					<li>Something went wrong!</li>
+				{/each}
+			</fieldset>
 
-	<h3>Minutes:</h3>
+			<fieldset class="fieldset text-lg">
+				<legend class="fieldset-legend">Minutes</legend>
 
-	<ul>
-		{#each [1, 2, 3, 4, 5] as minutes}
-			<li>
-				<input type="radio" name="minutes" value={minutes} id="minutes-{minutes}" />
-				<label for="minutes-{minutes}">
-					{minutes}
-				</label>
-			</li>
-		{:else}
-			<li>Something went wrong!</li>
-		{/each}
-	</ul>
+				{#each [1, 2, 3, 4, 5] as minutes}
+					<label class="label text-base-content" for="minutes-{minutes}">
+						<input
+							type="radio"
+							class="radio radio-primary"
+							name="minutes"
+							value={minutes}
+							id="minutes-{minutes}"
+						/>
+						{minutes}
+					</label>
+				{:else}
+					<li>Something went wrong!</li>
+				{/each}
+			</fieldset>
+		</div>
 
-	<input type="submit" value="Start timer" />
-</form>
+		<input class="btn btn-xl btn-primary" type="submit" value="Start timer" />
+	</form>
+</article>
