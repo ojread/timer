@@ -37,8 +37,8 @@
 							type="radio"
 							class="radio radio-primary"
 							name="theme"
-							value={theme.toLowerCase().replaceAll(' ', '')}
-							id="theme-{theme.toLowerCase().replaceAll(' ', '')}"
+							value={theme.toLowerCase().replaceAll(' ', '').replaceAll('-', '')}
+							id="theme-{theme.toLowerCase().replaceAll(' ', '').replaceAll('-', '')}"
 						/>
 						{theme}
 					</label>
