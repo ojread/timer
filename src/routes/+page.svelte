@@ -8,6 +8,7 @@
 		'Numberblocks',
 		'Numberjacks',
 		'Paw Patrol',
+		'Pokemon',
 		'Spider-Man',
 		'Spongebob',
 		'Star Wars',
