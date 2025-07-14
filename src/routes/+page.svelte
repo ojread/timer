@@ -7,11 +7,13 @@
 		'My Singing Monsters',
 		'Numberblocks',
 		'Numberjacks',
+		'Om Nom',
 		'Paw Patrol',
 		'Pokemon',
 		'Spider-Man',
 		'Spongebob',
 		'Star Wars',
+		'Stitch',
 		'Vania Mania'
 	];
 
